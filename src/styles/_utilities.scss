@@ -1,0 +1,74 @@
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap');
+
+
+
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.mb-5 {
+  margin-bottom: 5rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.rel {
+  position: relative;
+}
+.text-left{
+  text-align: end;
+}
+
+.btn {
+  display: flex;
+  width:100%;
+  padding: 1rem 0rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.25rem;
+  background: $colorBlue;
+  color: $colorWhite;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+input {
+    box-sizing:none;
+    width: 100%;
+    padding:0.7rem 1rem;
+    font-size: 1.1rem;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    border-radius: 0.25rem;
+    color:$colorDark;
+    margin: 0.5rem 0;
+    outline: none;
+    border: 1px solid   rgba(23, 26, 31, 0.12);
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+
+}

@@ -1,0 +1,103 @@
+@import "./variables";
+
+
+.auth{
+  display: flex;
+  height: 100vh;
+
+  @media only screen and (max-width: $bp-small) {
+    display: block;
+ };
+  .auth_con {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex: 0.5;
+      .logo_con {
+        margin-bottom: 1rem;
+    
+        img {
+          width: 100px; 
+          height: auto;
+        }
+      }
+    
+      .auth_form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        
+        @media only screen and (max-width: $bp-small) {
+          width: 90%;
+          box-sizing: border-box;
+       };
+        label {
+          color: $colorSecondary;
+        }
+  
+        a {
+          color: $colorBlue;
+          font-size: 0.75rem;
+          font-weight: 500;
+          padding:0rem 1rem;
+          
+          width: 100%;
+          cursor: pointer;
+        }
+    
+        button {
+           margin-bottom: 2rem;
+           margin-top: 1rem;
+        }
+      }
+    }
+    .authImg_con{
+      flex: 1;
+      height: 100%;
+      @media only screen and (max-width: $bp-small) {
+        display: none;  
+     };
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+     
+    }
+
+    
+}
+
+
+
+.logo{
+  display: inline-flex;
+  height: 4.125rem;
+  width: 4.125rem;
+  padding:1rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: $colorPurple;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+  @media only screen and (max-width: $bp-small) {
+   width: 3rem;
+   height: 3rem;
+  }; 
+  p{
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem;
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.5rem;
+     
+    }; 
+  }
+}

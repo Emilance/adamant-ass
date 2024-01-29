@@ -1,0 +1,37 @@
+@import "./variables";
+
+
+.chatpage {
+    height: 100vh;
+    max-height: 100vh;
+    .chat_con {
+        padding: 2rem;
+        display: flex;
+        @media only screen and (max-width: $bp-small) {
+            padding: 0;
+         }; 
+        
+        .bar_con {
+        flex: 0.3;
+        height: 80vh;
+        padding: 1rem;
+        border-radius: 0.375rem;
+        background: #F8F9FA;
+        box-shadow: 0px 2px 5px 0px rgba(23, 26, 31, 0.09), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+        @media only screen and (max-width: $bp-small) {
+           display:none;
+         
+        }; 
+    }
+        .mess_con{
+            flex: 1;
+            height: 80vh;
+            padding: 1rem;
+            border-radius: 0.375rem;
+            @media only screen and (max-width: $bp-small) {
+               height: 89vh;
+              
+             }; 
+        }
+    }
+}
