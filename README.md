@@ -5,11 +5,15 @@ https://adamant-ass.vercel.app/
 Overview
 ![screencapture-localhost-5173-2024-01-30-12_12_42](https://github.com/Emilance/adamant-ass/assets/100171190/794c5cf3-209d-49ee-b374-711b9d68b082)
 
-- username - daneil
+- username - daniel
 - password  - daniel123
 
 Adamant Chat Bot is a simple frontend application created as an assignment for a job interview. The application simulates a chat bot interaction without the need for a backend. Users can log in using the credentials 'adamantcode' as the username and 'password123!' as the password.
 
+or
+- username - daniel
+- password  - daniel123
+- 
 Getting Started
 To explore the chat bot, follow these steps:
 
