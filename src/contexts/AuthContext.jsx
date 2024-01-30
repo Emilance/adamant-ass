@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { generateRandomString, getToken, removeToken, setToken } from "../utils/utilFunc";
+import { generateRandomString, getToken, getUser, removeToken, setToken, setUser } from "../utils/utilFunc";
 
 const AuthContext = createContext();
 
@@ -9,16 +9,20 @@ export const useAuth = () => {
 
 export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [user, setcookUser] = useState(false);
+
 
   useEffect(() => {
     const checkIsLogin = () => {
       const token = getToken();
+      const cookUser  = getUser()
       if (token) {
         console.log('Checking login status...');
         setIsLoggedIn(true);
       } else {
         setIsLoggedIn(false);
       }
+      setcookUser(cookUser)
     };
 
     // Run checkIsLogin once after the initial render
@@ -32,11 +36,14 @@ export const AuthProvider = ({ children }) => {
     ) {
       const token = generateRandomString(10);
       setToken(token);
+      setUser({name: param.userName})
+      setIsLoggedIn(true)
       return true;
     } else {
       return false;
     }
   };
+  
 
   const logout = () => {
     removeToken();
@@ -48,6 +55,7 @@ export const AuthProvider = ({ children }) => {
     isLoggedIn,
     login,
     logout,
+    user
   };
 
   return (

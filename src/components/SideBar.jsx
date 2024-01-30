@@ -24,17 +24,16 @@ const SideBar =() => {
            <div className="conversation_con">
             {chatNo.map((data, index) => {
                 return (
-                    <div className="sbtn conv">
-                    <p>Conversations 1</p>
-                    <DeleteIcon/>
+                    <div key={data} className="sbtn conv">
+                    <p>Conversations</p>
+                    <div  onClick={() => deleteConversation()}>
+                      <DeleteIcon  />
+                      </div>
                    </div>
                    
                 )
             })}
-              <div className="sbtn active_conv ">
-                    <p>Conversations 1</p>
-                    <DeleteIcon/>
-                   </div>
+            
             
            </div>
        </div>

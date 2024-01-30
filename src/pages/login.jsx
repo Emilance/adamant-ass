@@ -51,8 +51,8 @@ const LoginPage = () => {
         }
        const resp = await login(formData)
        if(resp){
+         navigate('/', {replace :true});
         console.log("Login In Successfull")
-        navigate('/');
        }else {
         setLoading(false)
         setError("Incorrect UserName and Password")

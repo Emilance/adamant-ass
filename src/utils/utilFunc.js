@@ -27,6 +27,7 @@ export function setToken(token ) {
     return user ? JSON.parse(user) : {};
   }
   
+  export const delay = (milliseconds) => new Promise(resolve => setTimeout(resolve, milliseconds));
 
   export function generateRandomString(length) {
     const charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -40,4 +41,14 @@ export function setToken(token ) {
     return result;
   }
 
-  export const delay = (milliseconds) => new Promise(resolve => setTimeout(resolve, milliseconds));
+
+  export function getRandomValueFromArray(array) {
+    // Check if the array is not empty
+    if (array.length === 0) {
+      return undefined;
+    }
+    // Generate a random index
+    const randomIndex = Math.floor(Math.random() * array.length);
+    // Return the value at the random index
+    return array[randomIndex];
+  }

@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
   }
   
   .modal {
@@ -32,6 +33,7 @@
     align-items: center;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
+    width: 100%;
   
     span {
       font-size: 1.2em;
@@ -39,7 +41,7 @@
     }
   
     button {
-      background: none;
+      
       border: none;
       font-size: 1.5em;
       cursor: pointer;
@@ -53,6 +55,9 @@
     p {
       color: #d9534f; /* Bootstrap's danger color */
       margin: 0;
+    }
+    button{
+      margin-top: 2rem;
     }
   }
   
