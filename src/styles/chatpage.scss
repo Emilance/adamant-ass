@@ -12,11 +12,12 @@
             
          }; 
          .mobile_bar_con{
-             display:block !important;
-             position: fixed;
-             width: 100%;
-            @media only screen and (max-width: $bp-medium) {
-             }; 
+             @media only screen and (max-width: $bp-medium) {
+                 display:block !important;
+                 position: fixed;
+                 width: 100%;
+                 z-index: 200;
+            }; 
          }
         .bar_con {
         flex: 0.3;
@@ -39,7 +40,8 @@
             //     display:none;       
             // }; 
             @media only screen and (max-width: $bp-small) {
-               height: 89vh;   
+               height: 89vh; 
+               padding: 0;  
              }; 
         }
     }

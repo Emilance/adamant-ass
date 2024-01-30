@@ -27,13 +27,15 @@
      }
   }
   
-  .header {
+  .mheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
     width: 100%;
+
+
   
     span {
       font-size: 1.2em;
