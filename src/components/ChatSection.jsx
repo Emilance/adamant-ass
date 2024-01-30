@@ -5,12 +5,12 @@ import aiImg from "../assets/img/aiImg.png"
 import gpt from "../assets/img/gpt.png"
 import sender from "../assets/img/sender.png"
 import HamburgerMenu from "./Hamburger";
+import { useChat } from "../contexts/ChatContext";
 
 
 
 const ChatSection =() => {
-    const [isBarOpen, setIsBarOpen] = useState(false);
-   
+     const {isBarOpen, setIsBarOpen} = useChat()
   
     const handleTextareaResize = (event) => {
         event.target.style.height = 'auto';
@@ -71,8 +71,25 @@ const ChatSection =() => {
                                     </div>
                       </div>
                  </div>
+
           
            </div>
+                 <div className="message_options">
+                      <div className="option">
+                         <p>Optoin A</p>
+                      </div>
+                      <div className="option">
+                         <p>Optoin B</p>
+                      </div>
+                      <div className="option">
+                         <p>Optoin C</p>
+                      </div>
+                      <div className="option">
+                         <p>Optoin D</p>
+                      </div>
+
+                      
+                 </div>
            <div className="textAreaCon" >
               <textarea       onInput={handleTextareaResize}
                  placeholder="Reply to chatbot"

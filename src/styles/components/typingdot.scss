@@ -1,0 +1,28 @@
+@import "../variables";
+
+ 
+.typing-dot-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .typing-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007bff;
+    margin-right: 5px;
+    animation: typing 1s infinite;
+  }
+  
+  @keyframes typing {
+    0%, 50%, 100% {
+      opacity: 0.5;
+      transform: translateY(0);
+    }
+    25%, 75% {
+      opacity: 1;
+      transform: translateY(-5px);
+    }
+  }
+  

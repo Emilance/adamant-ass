@@ -1,0 +1,29 @@
+@import "../variables";
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    p{
+        color: $colorPurple;
+        font-weight: 800;
+    }
+  }
+  
+  .spinner {
+    border: 1reem solid rgba(0, 0, 0, 0.1);
+    border-left: 1rem solid $colorBlue;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

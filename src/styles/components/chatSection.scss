@@ -8,6 +8,7 @@
      flex-direction: column;
     //  height:47.5rem;
       height: 100%;
+      position: relative;
     .chatHeader {
         
         color:$colorWhite;
@@ -51,7 +52,6 @@
 
     .conversation_con{
         padding: 0.9rem;
-    
         overflow-y: scroll;
         @media only screen and (max-width: $bp-small) {
             padding: 0.1rem;
@@ -141,10 +141,11 @@
                 }
             }
         }
+
     }
     .textAreaCon {
-        padding: 1rem 2rem;
-       
+        padding: 0.7rem 2rem;
+         
         flex-shrink: 0;
         display: flex;
         align-items: center;
@@ -168,6 +169,44 @@
             border-radius: 50%;
             cursor: pointer;
             background-color: $colorPurple;
+        }
+    }
+}
+
+
+
+.message_options {
+    display: flex;
+    gap: 2rem;
+   justify-content: center;
+    background-color: transparent;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $bp-small) {
+         gap:0.7rem;
+       }
+    .option{
+        display: flex;
+        width: 10.375rem;
+        height: 2.5rem;
+        padding: 0.4375rem ;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.125rem;
+        border: 1px solid $colorPurple;
+        background:transparent;
+        @media only screen and (max-width: $bp-small) {
+            width: 8.375rem;
+           }
+        p{
+           color: $colorPurple;
+        }
+    }
+    .option:hover {
+        background: $colorPurple;
+        p{
+
+            color: $colorWhite;
         }
     }
 }
